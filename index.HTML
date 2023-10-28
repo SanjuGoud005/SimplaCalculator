@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="./CSS/index.css">
+</head>
+<body>
+    <form name="cform">
+        <input type="text" id="display" autofocus name="Answer">
+        <div>
+            <input class="button" type="button" value="1" onclick="cform.Answer.value+='1'">
+            <input class="button" type="button" value="2" onclick="cform.Answer.value+='2'">
+            <input class="button" type="button" value="3" onclick="cform.Answer.value+='3'">
+            <input class="button" type="button" value="+" onclick="cform.Answer.value+='+'">
+        </div>
+        <div>
+            <input class="button" type="button" value="4" onclick="cform.Answer.value+='4'">
+            <input class="button" type="button" value="5" onclick="cform.Answer.value+='5'">
+            <input class="button" type="button" value="6" onclick="cform.Answer.value+='6'">
+            <input class="button" type="button" value="-" onclick="cform.Answer.value+='-'">
+        </div>
+        <div>
+            <input class="button" type="button" value="7" onclick="cform.Answer.value+='7'">
+            <input class="button" type="button" value="8" onclick="cform.Answer.value+='8'">
+            <input class="button" type="button" value="9" onclick="cform.Answer.value+='9'">
+            <input class="button" type="button" value="*" onclick="cform.Answer.value+='*'">
+        </div>
+        <div>
+            <input class="button" type="button" value="." onclick="cform.Answer.value+='.'">
+            <input class="button" type="button" value="0" onclick="cform.Answer.value+='0'">
+            <input class="button" type="button" value="%" onclick="cform.Answer.value+='%'">
+            <input class="button" type="button" value="/" onclick="cform.Answer.value+='/'">
+        </div>
+        <div>
+            <input class="splButton" type="button" value="Clear" onclick="cform.Answer.value=''">
+            <input class="splButton" type="button" value="=" onclick="cform.Answer.value=eval(cform.Answer.value)">
+        </div>
+    </form>
+</body>
+</html>
